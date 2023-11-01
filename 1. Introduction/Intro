@@ -1,0 +1,7 @@
+a. What is TypeScript??
+
+ans : 
+1. Alternative to JavaScript superset
+2. Always follows strict types 
+3. Always support modern features (Arrow function , let const)
+4. Extra Features(generics,interfaces,tuples)
