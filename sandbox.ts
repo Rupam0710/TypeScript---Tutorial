@@ -1,9 +1,22 @@
-const char = 'alex';
-console.log(char);
+let character = 'marie';
+let age = 30;
+let isBlackBelt = false;
 
-const inputs = document.querySelectorAll('input');
-console.log(inputs);
+// character = 23; not possible as character type is string
+character = 'Rohit'
 
-inputs.forEach(input =>{
-    console.log(input);    
-});
+// age = true; not possible as age type is number
+age = 10
+
+// isBlackBelt = 'marie'; not possible as isBlackBelt type is boolean
+isBlackBelt = true;
+
+const circ = (diameter:number)=>{
+    return diameter * Math.PI;
+}
+
+console.log(circ(12));
+
+
+
+
