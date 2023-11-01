@@ -1,34 +1,17 @@
-//explicit types
-var character;
-var age;
-var isLoggedIn;
-// age = 'rohit'
-age = 15;
-// isLoggedIn = 25
-isLoggedIn = false;
-//arrays
-var ninjas;
-ninjas = ['ram', 'sam'];
-ninjas.push('ro');
-console.log(ninjas);
-//union
+var age = 25;
+age = 'ram';
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age);
+age = { name: 'luis' };
+console.log(age);
 var mixed = [];
-mixed = ['ram', 15, true, false, 'sam'];
-mixed.push(20);
+mixed.push(2);
+mixed.push('maria');
+mixed.push(true);
 console.log(mixed);
-var uid;
-uid = 123;
-uid = 'ab1';
-//object
-var obj1;
-obj1 = {
-    name: 'Takeshi',
-    age: 21
-};
-var obj2;
-obj2 = {
-    name: 'ash',
-    age: 32,
-    belt: 'black'
-};
-console.log(obj2);
+var ninja;
+ninja = { name: 'roy', age: 20 };
+ninja = { name: 20, age: 'roy' };
+console.log(ninja);
