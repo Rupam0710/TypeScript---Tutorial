@@ -1,42 +1,49 @@
+//explicit types
+let character:string;
+let age : number;
+let isLoggedIn : boolean;
+
+// age = 'rohit'
+age = 15;
+
+// isLoggedIn = 25
+isLoggedIn = false;
+
 //arrays
-let names = ['rupam','rohit','raj'];
-names.push('cristiano');
-console.log(names);
+let ninjas : string[]
+ninjas = ['ram','sam'];
+ninjas.push('ro');
+console.log(ninjas);
 
-
-// names.push(3);
-// names[0]=3
-
-let numbers = [10,20,30];
-numbers.push(40);
-console.log(numbers);
-
-
-// numbers.push('shaun');
-
-let mixed = ['rup', 'josh', 14 ,20];
-mixed.push(12);
-mixed.push('messi');
+//union
+let mixed : (string | number | boolean)[] = [];
+mixed = ['ram',15,true,false,'sam'];
+mixed.push(20);
 console.log(mixed);
 
+let uid : string|number;
+uid = 123;
+uid = 'ab1';
 
 
-//objects
-let obj ={
-    name : 'bale',
-    job : 'football',
-    age : 30
+//object
+let obj1 : object;
+obj1 = {
+    name : 'Takeshi',
+    age : 21
 }
-
-obj.age = 40;
-obj.job = 'golf'
-// obj.name = 20
-// obj.skills = ['fighting','sneak']
-
-obj = {
-    name : 'virat',
-    job : 'cricketer',
-    age : 35 ,
-    // skills : 'job'
+let obj2: {
+    name : string,
+    age: number,
+    belt : string,
 }
-console.log(obj);
+obj2 ={
+    name : 'ash',
+    age : 32,
+    belt : 'black'
+}
+console.log(obj2);
+
+
+
+

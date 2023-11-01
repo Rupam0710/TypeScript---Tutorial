@@ -1,31 +1,34 @@
+//explicit types
+var character;
+var age;
+var isLoggedIn;
+// age = 'rohit'
+age = 15;
+// isLoggedIn = 25
+isLoggedIn = false;
 //arrays
-var names = ['rupam', 'rohit', 'raj'];
-names.push('cristiano');
-console.log(names);
-// names.push(3);
-// names[0]=3
-var numbers = [10, 20, 30];
-numbers.push(40);
-console.log(numbers);
-// numbers.push('shaun');
-var mixed = ['rup', 'josh', 14, 20];
-mixed.push(12);
-mixed.push('messi');
+var ninjas;
+ninjas = ['ram', 'sam'];
+ninjas.push('ro');
+console.log(ninjas);
+//union
+var mixed = [];
+mixed = ['ram', 15, true, false, 'sam'];
+mixed.push(20);
 console.log(mixed);
-//objects
-var obj = {
-    name: 'bale',
-    job: 'football',
-    age: 30
+var uid;
+uid = 123;
+uid = 'ab1';
+//object
+var obj1;
+obj1 = {
+    name: 'Takeshi',
+    age: 21
 };
-obj.age = 40;
-obj.job = 'golf';
-// obj.name = 20
-// obj.skills = ['fighting','sneak']
-obj = {
-    name: 'virat',
-    job: 'cricketer',
-    age: 35,
-    // skills : 'job'
+var obj2;
+obj2 = {
+    name: 'ash',
+    age: 32,
+    belt: 'black'
 };
-console.log(obj);
+console.log(obj2);
