@@ -1,21 +1,13 @@
-let greet : Function;
+type StringOrNum = string|number;
+type ObjectWithUiD = {name : string,uid : StringOrNum};
 
-greet = ()=>{
-    console.log('Hello World');
-}
-
-const add = (a:number,b:number,c ?: number|string):void=>{
-    console.log(a+b);
-    console.log(c);
+const logDetails = (uid : StringOrNum,items:string)=>{
+    console.log(`${items} has an uid of ${uid}`);
     
 }
 
-add(5,10,'ram');
-
-const minus = (a:number,b:number):number=>{
-   return a+b;
+const greet = (user : ObjectWithUiD)=>{
+    console.log(`${user.name} says hello`);
+    
 }
-
-let result = minus(10,7);
-console.log(result);
 
