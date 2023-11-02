@@ -1,13 +1,30 @@
-type StringOrNum = string|number;
-type ObjectWithUiD = {name : string,uid : StringOrNum};
+// let greet : Function;
 
-const logDetails = (uid : StringOrNum,items:string)=>{
-    console.log(`${items} has an uid of ${uid}`);
+
+//1st example
+let greet : (a:string , b:string) => void;
+greet = (name:string, greeting :string) : void=>{
+    console.log(`${name} says ${greeting}`);
     
 }
 
-const greet = (user : ObjectWithUiD)=>{
-    console.log(`${user.name} says hello`);
-    
+//2nd example
+let calc : (a:number,b:number,c:string)=>number;
+
+calc = (numOne:number,numTwo : number, action:string)=>{
+   if(action === 'add'){
+    return numOne + numTwo;
+   }
+   else{
+    return numOne-numTwo;
+   }
 }
 
+//3rd example
+let logDetails : (obj:{name:string,age:number})=>void;
+
+
+type ObjectwithAge = {name:string , age:number};
+logDetails = (ninja : ObjectwithAge)=>{
+   console.log(`${ninja.name}is ${ninja.age} years old`);
+}
