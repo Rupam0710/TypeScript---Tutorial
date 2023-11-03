@@ -36,14 +36,22 @@ const addUID = (obj) => {
 let docThree = addUID({ name: 'yoshi', age: 40 });
 let docFour = addUID({ name: 'yoshi' });
 console.log(docThree);
+//enums
+var ResourceName;
+(function (ResourceName) {
+    ResourceName[ResourceName["BOOK"] = 0] = "BOOK";
+    ResourceName[ResourceName["AUTHOR"] = 1] = "AUTHOR";
+    ResourceName[ResourceName["FILM"] = 2] = "FILM";
+    ResourceName[ResourceName["DIRECTOR"] = 3] = "DIRECTOR";
+})(ResourceName || (ResourceName = {}));
 const docFive = {
     uid: 1,
-    resourceName: 'person',
+    resourceName: ResourceName.BOOK,
     data: { name: 'ram', age: 40 }
 };
 const docSix = {
     uid: 2,
-    resourceName: 'Shopping',
+    resourceName: ResourceName.AUTHOR,
     data: ['saree', 'kurta']
 };
 console.log(docFive, docSix);

@@ -56,23 +56,27 @@ let docFour = addUID({name:'yoshi'});
 console.log(docThree);
 
 
+//enums
+
+enum ResourceName{BOOK,AUTHOR,FILM,DIRECTOR}
+
 //Generics with interfaces
 interface Resource<T>{
     uid:number;
-    resourceName : string,
+    resourceName : ResourceName,
     data: T;
 }
 
 
 const docFive : Resource<object>={
     uid:1,
-    resourceName : 'person',
+    resourceName : ResourceName.BOOK,
     data: {name:'ram',age:40}
 }
 
 const docSix : Resource<string[]> = {
     uid:2,
-    resourceName : 'Shopping',
+    resourceName : ResourceName.AUTHOR,
     data: ['saree','kurta']
 }
 
