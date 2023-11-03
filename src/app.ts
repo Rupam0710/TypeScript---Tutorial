@@ -30,12 +30,15 @@ const list = new ListTemplates(ul);
 form.addEventListener('submit',(e)=>{
     
     e.preventDefault();
+
+    let values : [string,string,number] =[tofrom.value,details.value,amount.valueAsNumber]
+
     let doc:HasFormatter;
     if(type.value === 'invoice'){
-        doc = new Invoice(tofrom.value,details.value,amount.valueAsNumber);
+        doc = new Invoice(...values);
     }
     else{
-        doc = new Payment(tofrom.value,details.value,amount.valueAsNumber);
+        doc = new Payment(...values);
 
     }
     
@@ -82,5 +85,25 @@ const docSix : Resource<string[]> = {
 
 console.log(docFive,docSix);
 
+//normal array
+
+let arr = ['abc',20,true];
+arr[0]=20;
+arr[1]=false;
+arr[2]='bcd';
+console.log(arr);
+
+//tuple
+
+let tup : [string,number,boolean] = ['SRK',58,false];
+// tup[0]=58;
+// tup[1]='abc'
+tup[0]='abc';
+tup[1]=20;
+tup[2]=true;
+
+let student : [string,number] = ['Lee',12];
+student[0] = 'Joe';
+student[1] = 20;
 
 
